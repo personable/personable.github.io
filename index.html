@@ -7,19 +7,23 @@
 
     <title>instructure-ui - A design system by Instructure Inc. (6.21.0)</title>
 
-    <!-- font for instructure theme -->
+    <!-- Proxima Nova fallback font for instructure theme -->
     <link href='https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700' rel='stylesheet'>
 
     <!-- font for canvas theme -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
 
     <!-- homepage hero image -->
-    <link rel="preload" href="https://www.dropbox.com/s/zhn7m3lkctbx4yi/hero2.jpg?raw=1" as="image">
+    <link rel="preload" href="https://instui-docs.s3.us-east-2.amazonaws.com/hero2.jpg" as="image">
 
     <!-- custom headline font -->
-    <link rel="preload" href="https://www.dropbox.com/s/kbh3dhr98w6om0u/tiempos-headline-web-bold.woff2?raw=1" type="font/woff2" as="font">
+    <link rel="preload" href="https://instui-docs.s3.us-east-2.amazonaws.com/tiempos-headline-web-bold.woff2" as="font" type="font/woff2" crossorigin>
 
     <style type="text/css">
+      @font-face {
+        font-family: "TiemposHeadlineWebBold";
+        src: url("https://instui-docs.s3.us-east-2.amazonaws.com/tiempos-headline-web-bold.woff2") format("woff2");
+      }
       body {
         font-family: "Proxima Nova", "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
         "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
